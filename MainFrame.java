@@ -12,6 +12,7 @@ public static void createNewFrame(){
 	
 	MainPanel panel = new MainPanel();
 	frame.getContentPane().add(panel);
+	frame.setJMenuBar(panel.createFileMenu());
 	
 	frame.pack();
 	frame.setVisible(true);
